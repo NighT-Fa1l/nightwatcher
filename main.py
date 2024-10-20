@@ -4,7 +4,7 @@ import os
 import asyncio
 from dotenv import load_dotenv
 import webserver
-load_dotenv()
+
 webserver.keep_alive()
 
 
