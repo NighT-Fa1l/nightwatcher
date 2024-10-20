@@ -2,10 +2,9 @@ import discord
 from discord.ext import commands
 import os
 import asyncio
-
 import webserver
 
-webserver.keep_alive()
+
 
 
 intents = discord.Intents.all()
@@ -30,6 +29,8 @@ async def on_ready():
 @bot.event
 async def on_connect():
     await load_extensions()
+
+webserver.keep_alive()
 bot.run(os.getenv("DISCORD_TOKEN"))
 
 
