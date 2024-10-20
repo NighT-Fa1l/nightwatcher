@@ -32,7 +32,7 @@ class LevelingSystem:
             self.xp_data[user_id]['level'] += 1
             level += 1
             required_xp = 100 * (2 ** (level - 1))  # Update required XP for the new level
-            channel = bot.get_channel(1297692455856111716)  # Replace with your channel ID
+            channel = bot.get_channel(1297669210431950858)  # Replace with your channel ID
             if channel:
                 new_level = self.xp_data[user_id]['level']
                 await channel.send(
