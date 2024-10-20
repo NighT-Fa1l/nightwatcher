@@ -27,7 +27,7 @@ class FriendGreet(commands.Cog):
             # Check if the user has been greeted in the last hour
             if user_id not in self.last_greeted or (now - self.last_greeted[user_id]).total_seconds() >= 3600:
                 self.last_greeted[user_id] = now  # Update the last greeted time
-                await message.reply('hello NighTs friend [hehe](https://cdn.discordapp.com/emojis/977619327811465276.webp?size=48&quality=lossless&name=CreepySmile)')
+                await message.reply('hello NighTs friend[.](https://cdn.discordapp.com/emojis/977619327811465276.webp?size=48&quality=lossless&name=CreepySmile)')
 
             # To keep the greeting going every hour after the first message:
             await self.send_periodic_greetings(user_id, message.channel)
